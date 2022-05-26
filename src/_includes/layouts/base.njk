@@ -3,46 +3,94 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
+    <title>{%- if title -%}{{title}}&nbsp;|&nbsp;{%- endif -%}{{ metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <meta name="generator" content="{{ eleventy.generator }}">
 
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-diff.css' | url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/themes/prism-coy.min.css" integrity="sha256-pO/fumqgrAT0qA1DpFzDZg5oE3ur2H1xhD8fpTnZoIY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/pulse/bootstrap.min.css" integrity="sha256-d3j6nPvgdSos3dIAmJSHebf76C5yAALgWwcHIom40Mo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha256-YW7U7x59rUPZ3DWzQKbalM/9j2Cp8wapJVQPRxL4w1k=" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ '/css/site.css' | url }}">
+
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
   </head>
   <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      </ul>
-    </header>
-
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-
-      <!-- Delete this message -->
-      <div class="warning">
-        <ol>
-          <li>Edit the <code>_data/metadata.json</code> with your blog’s information.</li>
-          <li>(Optional) Edit <code>.eleventy.js</code> with your <a href="https://www.11ty.dev/docs/config/">configuration preferences</a>.</li>
-          <li>Delete this message from <code>_includes/layouts/base.njk</code>.</li>
-        </ol>
-        <p><em>This is an <a href="https://www.11ty.dev/">Eleventy project</a> created from the <a href="https://github.com/11ty/eleventy-base-blog"><code>eleventy-base-blog</code> repo</a>.</em></p>
+    <a class="btn btn-primary skip-nav-link" href="#main-content">Skip Navigation</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="{{ '/' | url }}">{{ metadata.title }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav ms-auto">
+          {%- for entry in collections.all | eleventyNavigation %}
+            {%- if not entry.parentKey -%}
+            <li class="nav-item">
+              <a class="nav-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+            {%- endif -%}
+          {%- endfor %}
+          </ul>
+        </div>
       </div>
-      <!-- Stop deleting -->
+    </nav>
 
+    <main class="container" id="main-content">
       {{ content | safe }}
+
+      <p class="text-center"> 
+          <img class="img-fluid" src="{{ "/img/dotnet-bot/active-community-bots-table-chairs.png" | url }}" alt="" />
+      </p>
     </main>
 
-    <footer></footer>
+    <footer class="container-fluid bg-secondary mb-0 mt-3 py-3" aria-label="social links footer">
+      <div class="row">
+        <div class="col text-center">
+          <a href="https://github.com/htdnug" class="text-white px-2" target="_blank" title="GitHub"><i class="bi bi-github fs-2"></i></a>
+          <a href="https://discord.com/invite/CXhg7XV" class="text-white px-2" target="_blank" title="Discord"><i class="bi bi-discord fs-2"></i></a>
+          <a href="https://twitter.com/htdnug/" class="text-white px-2" target="_blank" title="Twitter"><i class="bi bi-twitter fs-2"></i></a>
+          <a href="https://www.facebook.com/groups/houma.thibodaux.dot.net" class="text-white px-2" target="_blank" title="Facebook"><i class="bi bi-facebook fs-2"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="container-fluid bg-dark text-white my-0 py-3" aria-label="primary footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-white mt-3">Pages</h5>
+            <div class="d-grid gap-2 mb-3">
+              <a class="btn btn-primary text-start" href="{{ 'tags/meetings/' | url }}">Meetings</a>
+              <a class="btn btn-primary text-start" href="{{ 'tags/event/' | url }}">Events</a>
+            </div>
+            <h5 class="text-white">Links</h5>
+            <div class="d-grid gap-2">
+              <a class="btn btn-primary text-start" target="_blank" href="https://www.brdnug.org">Baton Rouge .NET User Group</a>
+            </div>
+            <div class="mt-4">
+              <img class="img-fluid d-inline-block pe-2" style="max-width:100px;" src="{{ "/img/dotnet-logo.png" | url }}" alt="" />
+              <img class="img-fluid d-inline-block" style="max-width:100px;" src="{{ "/img/blazor/Blazor_nohalo_128x.png" | url }}" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-white">Tags <a href="{{ '/tags/' | url }}" class="text-muted fs-6">All</a></h4>
+            {% for tag, count in collections.tagsByCount %}
+              {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+              <a href="{{ tagUrl | url }}" title="{{ tag }} ({{ count }})"><span class="badge bg-primary">{{ tag }}</span></a>
+            {% endfor %}
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-white">Twitter</h4>
+            <a class="twitter-timeline" data-height="500" data-theme="dark" href="https://twitter.com/htdnug?ref_src=twsrc%5Etfw">Tweets by htdnug</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Current page: {{ page.url | url }} -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha256-9SEPo+fwJFpMUet/KACSwO+Z/dKMReF9q4zFhU/fT9M=" crossorigin="anonymous"></script>
   </body>
 </html>
