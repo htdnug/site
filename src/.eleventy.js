@@ -13,8 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("js");
-  // eleventyConfig.addPassthroughCopy("site.webmanifest");
-  // eleventyConfig.addPassthroughCopy("staticwebapp.config.json");
+  eleventyConfig.addPassthroughCopy("staticwebapp.config.json");
   eleventyConfig.addPassthroughCopy("posts/2016/2016-05-31-june-2016-meeting");
 
   // Add plugins
