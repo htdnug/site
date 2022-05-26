@@ -3,8 +3,8 @@ title: "January 2016 Meeting"
 date: "2016-01-06"
 tags: 
   - "meetings"
-  - "net"
-  - "asp-net"
+  - "dotnet"
+  - "aspnet"
   - "mvc"
 ---
 

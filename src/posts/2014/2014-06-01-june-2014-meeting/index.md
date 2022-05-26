@@ -3,7 +3,7 @@ title: "June 2014 Meeting"
 date: "2014-06-01"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "xml"
 ---
 

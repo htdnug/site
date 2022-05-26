@@ -3,7 +3,7 @@ title: "April 2017 Meeting"
 date: "2017-04-20"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "ssas"
   - "ssrs"
   - "visual-studio"

@@ -3,7 +3,7 @@ title: "June 2012 – Intro to Unit Testing"
 date: "2012-06-11"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "unit-testing"
   - "visual-studio"
 ---

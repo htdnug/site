@@ -3,7 +3,7 @@ title: "June 2015 Meeting"
 date: "2015-06-08"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "tools"
   - "visual-studio"
 ---

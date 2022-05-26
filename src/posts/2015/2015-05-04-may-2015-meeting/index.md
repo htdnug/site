@@ -3,7 +3,7 @@ title: "May 2015 Meeting"
 date: "2015-05-04"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "kata"
   - "visual-studio"
 ---

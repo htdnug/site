@@ -1,7 +1,7 @@
 ---
 title: "August 2014 Meeting"
 date: "2014-08-13"
-categories: 
+tags: 
   - "meetings"
 ---
 

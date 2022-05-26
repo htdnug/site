@@ -3,7 +3,7 @@ title: "February 2015 Meeting"
 date: "2015-02-04"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "patterns"
   - "visual-studio"
 ---

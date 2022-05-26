@@ -4,7 +4,7 @@ date: "2016-02-19"
 categories: 
   - "meetings-notes"
 tags: 
-  - "net"
+  - "dotnet"
 ---
 
 _**UPDATE: Cancelled due to weather.**_

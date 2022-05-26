@@ -3,7 +3,7 @@ title: "2012 Baton Rouge SQL Saturday &amp; Tech Day"
 date: "2012-04-23"
 tags: 
   - "event"
-  - "net"
+  - "dotnet"
   - "baton-rouge"
   - "louisiana"
   - "sharepoint"

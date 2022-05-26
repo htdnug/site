@@ -3,7 +3,7 @@ title: "September 2012 Meeting - Intro to LINQ"
 date: "2012-08-06"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "linq"
   - "visual-studio"
 ---

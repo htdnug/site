@@ -4,8 +4,8 @@ date: "2014-02-01"
 categories: 
 tags: 
   - "meetings"
-  - "net"
-  - "ado"
+  - "dotnet"
+  - "ado.net"
 ---
 
 Date: Thursday, February 13, 2014 Time: 6:00 pm – 8:00 pm Location: [Books-A-Million Houma](http://htdnug.wordpress.com/meetings/ "Meetings")

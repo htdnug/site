@@ -3,7 +3,7 @@ title: ".NET Conf 2017"
 date: "2017-10-11"
 tags: 
   - "event"
-  - "net"
+  - "dotnet"
 ---
 
 On Sept 19-21, 2017, Microsoft held .NET Conf 2017. The site describes it as follows:

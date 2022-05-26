@@ -3,7 +3,7 @@ title: "April 2015 Meeting"
 date: "2015-04-10"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
   - "patterns"
   - "visual-studio"
 ---

@@ -3,7 +3,7 @@ title: "April 2014 Meeting"
 date: "2014-04-01"
 tags: 
   - "meetings"
-  - "net"
+  - "dotnet"
 ---
 
 Date: Thursday, April 10, 2014 Time: 6:00 pm – 8:00 pm Location: [Books-A-Million Houma](http://htdnug.wordpress.com/meetings/ "Meetings")
