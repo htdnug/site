@@ -1,0 +1,30 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<div class="mb-3 p-3 bg-secondary text-white">
+  <img class="rounded float-sm-end mb-2 img-fluid" src="{{ "/img/dotnet-bot/asp-dot-net-core-modern-innovative-bot-computer.png" | url }}" alt="" />
+  <p class="fs-5">
+      Welcome to the Houma-Thibodaux .NET User Group! HTDNUG is a Microsoft user group for those in and around Terrebonne and Lafourche.
+  </p>
+  <p class="fs-5">
+    Join the discussion!
+  </p>
+  <a class="btn btn-primary btn-lg" title="HTDNUG and BRDNUG Discord" href="https://discord.com/invite/CXhg7XV">Discord</a>
+  <a class="btn btn-primary btn-lg" title="HTDNUG Facebook Group" href="https://www.facebook.com/groups/houma.thibodaux.dot.net">Facebook</a>
+  <div style="clear: both;"></div>
+</div>
+
+<div class="mt-3 mb-3 p-3" style="background: #efefef;">
+  <h2>About HTDNUG</h2>
+  {% include "blurbs/about.njk" %}
+</div>
+
+{% set maxPosts = collections.posts.length | min(3) %}
+<h2>Latest Posts <a href="{{ '/posts/' | url }}" class="text-muted fs-6">Archive</a></h2>
+{% set postslist = collections.posts | head(-3) %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}

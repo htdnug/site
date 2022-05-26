@@ -1,0 +1,61 @@
+---
+title: "2017 Year End Link Round Up"
+date: "2018-01-03"
+tags: 
+  - "round-up"
+---
+
+Here's your 2017 link round up for recommended reading. This should cover Nov and Dec.
+
+- The Heisenberg Developer
+    - [https://visualstudiomagazine.com/articles/2017/09/01/the-heisenberg-developer.aspx](https://visualstudiomagazine.com/articles/2017/09/01/the-heisenberg-developer.aspx)
+- Encryption Strategy
+    - [https://visualstudiomagazine.com/articles/2017/09/01/an-encryption-strategy.aspx](https://visualstudiomagazine.com/articles/2017/09/01/an-encryption-strategy.aspx)
+- Razor Pages
+    - [https://github.com/VenusInterns/BlogTemplate](https://github.com/VenusInterns/BlogTemplate)
+    - [https://msdn.microsoft.com/en-us/magazine/mt842512](https://msdn.microsoft.com/en-us/magazine/mt842512)
+    - [https://docs.microsoft.com/en-us/aspnet/core/mvc/razor-pages/?tabs=visual-studio](https://docs.microsoft.com/en-us/aspnet/core/mvc/razor-pages/?tabs=visual-studio)
+    - [https://developer.telerik.com/content-types/podcast/aspnet-core-razor-pages-worth-checking/](https://developer.telerik.com/content-types/podcast/aspnet-core-razor-pages-worth-checking/)
+- .NET Core vs .NET Framework: How to Pick a .NET Runtime for an Application
+    - [https://stackify.com/net-core-vs-net-framework/](https://stackify.com/net-core-vs-net-framework/)
+- Developer Extensions, Plugins, etc.
+    - [http://vsrefactoringessentials.com/](http://vsrefactoringessentials.com/)
+    - [https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets](https://github.com/kspearrin/Visual-Studio-jQuery-Code-Snippets)
+    - [https://oz-code.com/](https://oz-code.com/)
+    - [https://stackify.com/prefix/](https://stackify.com/prefix/)
+    - [http://www.codemaid.net/](http://www.codemaid.net/)
+    - [https://www.hanselman.com/blog/WebOptimizerABundlerAndMinifierForASPNETCore.aspx](https://www.hanselman.com/blog/WebOptimizerABundlerAndMinifierForASPNETCore.aspx)
+- Building Inclusive Toggle Buttons
+    - [https://www.smashingmagazine.com/2017/09/building-inclusive-toggle-buttons/](https://www.smashingmagazine.com/2017/09/building-inclusive-toggle-buttons/)
+- QuickType
+    - [https://quicktype.io/](https://quicktype.io/)
+- New Tools and Extensions for VS2017
+    - [https://visualstudiomagazine.com/articles/2017/09/01/22-new-tools.aspx](https://visualstudiomagazine.com/articles/2017/09/01/22-new-tools.aspx)
+    - [https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal](https://marketplace.visualstudio.com/items?itemName=DanielGriffen.WhackWhackTerminal)
+    - [https://marketplace.visualstudio.com/items?itemName=vs-publisher-599079.FixNamespace](https://marketplace.visualstudio.com/items?itemName=vs-publisher-599079.FixNamespace)
+- .NET Portability Analyzer
+    - [https://github.com/Microsoft/dotnet-apiport/blob/master/docs/VSExtension/README.md](https://github.com/Microsoft/dotnet-apiport/blob/master/docs/VSExtension/README.md)
+- Extracting Data with Regular Expressions
+    - [https://visualstudiomagazine.com/articles/2017/09/01/extracting-data.aspx](https://visualstudiomagazine.com/articles/2017/09/01/extracting-data.aspx)
+- SQL Application Lock
+    - [http://www.sqlteam.com/article/application-locks-or-mutexes-in-sql-server-2005](http://www.sqlteam.com/article/application-locks-or-mutexes-in-sql-server-2005)
+    - [https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-getapplock-transact-sql](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/sp-getapplock-transact-sql)
+    - [https://www.mssqltips.com/sqlservertip/3202/prevent-multiple-users-from-running-the-same-sql-server-stored-procedure-at-the-same-time/](https://www.mssqltips.com/sqlservertip/3202/prevent-multiple-users-from-running-the-same-sql-server-stored-procedure-at-the-same-time/)
+- Quick Wins For Improving Performance And Security Of Your Website
+    - [https://www.smashingmagazine.com/2017/10/improving-performance-security/](https://www.smashingmagazine.com/2017/10/improving-performance-security/)
+- Code Analysis, Profiling and Refactoring Tools for VS 2017
+    - [https://visualstudiomagazine.com/articles/2017/10/01/code-analysis.aspx](https://visualstudiomagazine.com/articles/2017/10/01/code-analysis.aspx)
+- Modernize existing .NET apps with Windows Containers and Azure
+    - [https://blogs.msdn.microsoft.com/dotnet/2017/11/01/modernize-existing-net-apps-with-windows-containers-and-azure/](https://blogs.msdn.microsoft.com/dotnet/2017/11/01/modernize-existing-net-apps-with-windows-containers-and-azure/)
+- Introducing API Analyzer
+    - [https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/](https://blogs.msdn.microsoft.com/dotnet/2017/10/31/introducing-api-analyzer/)
+    - [https://www.hanselman.com/blog/WritingSmarterCrossplatformNETCoreAppsWithTheAPIAnalyzerAndWindowsCompatibilityPack.aspx](https://www.hanselman.com/blog/WritingSmarterCrossplatformNETCoreAppsWithTheAPIAnalyzerAndWindowsCompatibilityPack.aspx)
+- Connect Event
+    - [https://www.microsoft.com/en-us/connectevent/](https://www.microsoft.com/en-us/connectevent/)
+- Dependency Injection w/ Miguel Castro
+    - [https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Dependency-Injection](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Dependency-Injection)
+- Free Azure Account
+    - [https://azure.microsoft.com/en-us/free/](https://azure.microsoft.com/en-us/free/)
+    - [https://azure.microsoft.com/en-us/free/free-account-faq/](https://azure.microsoft.com/en-us/free/free-account-faq/)
+- Understanding CSS Layout and the Block Formatting Context
+    - [https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/](https://www.smashingmagazine.com/2017/12/understanding-css-layout-block-formatting-context/)
